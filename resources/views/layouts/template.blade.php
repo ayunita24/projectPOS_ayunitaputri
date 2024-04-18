@@ -18,9 +18,8 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css')}}">
 </head>
-
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
+    <div class="wrapper">
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
             <!-- Left navbar links -->
@@ -38,13 +37,13 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                         <i class="fas fa-expand-arrows-alt"></i>
-                    </a>
+                        </a>
                 </li>
 
             </ul>
-            </nav>
+        </nav>
         <!-- /.navbar -->
-		
+
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
@@ -59,9 +58,9 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="{{ asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2"
+                    <img src="{{ asset('dist/img/user2-160x160.jpg')}}" class="img-circle elevation-2"
                             alt="User Image">
-                            </div>
+                    </div>
                     <div class="info">
                         <a href="#" class="d-block">Safrizal</a>
                     </div>
@@ -75,6 +74,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
+
                <li class="nav-item">
                             <a href="/" class="nav-link {{ ($title==='Dashboard')?'active':'' }}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -85,8 +85,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            
-                            <a href="#"
+                            <a href="{{ route('kategori.index')}}"
                                 class="nav-link {{ ($title==='Kategori') ? 'active':'' }}">
                                 <i class="nav-icon fas fa-th-large"></i>
                                 <p>
@@ -99,10 +98,10 @@
                             <a href="#" class="nav-link {{($title==='Produk')?'active':''}}">
                                 <i class="nav-icon fas fa-boxes"></i>
                                 <p>
-                                    Produk
+                                Produk
                                     <i class="fas fa-angle-left right"></i>
                                 </p>
-                                </a>
+                            </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
@@ -141,10 +140,11 @@
                                 <i class="nav-icon fas fa-cash-register"></i>
                                 <p>
                                     Pembelian
-                                </p>
+                                    </p>
                             </a>
-</li>
-<li class="nav-item">
+                        </li>
+
+                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-table"></i>
                                 <p>
@@ -163,7 +163,7 @@
                                     <a href="pages/tables/data.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Bulanan</p>
-                                    </a>
+                                        </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="pages/tables/jsgrid.html" class="nav-link">
@@ -204,9 +204,9 @@
 
                     </div>
                     <!-- /.row -->
-                    </div>
+                </div>
                 <!-- /.container-fluid -->
-            </div>
+                </div>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
@@ -229,6 +229,7 @@
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     @yield('tambahanJS')
+
     <!-- AdminLTE -->
     <script src="{{ asset('dist/js/adminlte.js')}}"></script>
 
@@ -240,4 +241,5 @@
 </body>
 
 </html>
+
 
