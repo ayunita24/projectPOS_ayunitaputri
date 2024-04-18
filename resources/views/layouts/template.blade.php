@@ -62,7 +62,7 @@
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Safrizal</a>
+                        <a href="#" class="d-block">ayunita putri</a>
                     </div>
                 </div>
 
@@ -119,7 +119,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link {{ ($title==='Customer')?'active':''}}">
+                            <a href="{{ route('pelanggan.index')}}" class="nav-link {{ ($title==='Customer')?'active':''}}">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Customer
