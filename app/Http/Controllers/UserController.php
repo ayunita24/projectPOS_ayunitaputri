@@ -25,10 +25,10 @@ class UserController extends Controller
             "password"=>"required"
         ]);
 
-        $password=Hash::make($request->passwword);
-        $request->merge([
-            "password"=>$password
-        ]);
+        // $password=Hash::make($request->passwword);
+        // $request->merge([
+        //     "password"=>$password
+        // ]);
 
         User::create($request->all());
 
